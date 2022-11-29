@@ -9,7 +9,7 @@
 int getRandomNumber( ){
     // Static prevents new seeds each call
     static std::mt19937_64 mt_engine{ (unsigned)time(0) };
-    static std::uniform_int_distribution<int> range{ 0, 100 };
+    static std::uniform_int_distribution<int> range{ 0, 99 };
     return range(mt_engine);
 }
 
