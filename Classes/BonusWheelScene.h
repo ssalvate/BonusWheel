@@ -51,23 +51,23 @@ public:
     // Use this to reset reward icon that has actions done to it
     struct ResetReward
     {
-        Vec2 pos;
-        Sprite* sp;
+        Vec2 pos{};
+        Sprite* sp = nullptr;
     };
 
 private:
+    // Member vars with in-class initialization
+    std::vector<Sprite*> mRewardIcons{};
+    Vec2 mScreenMiddle{};
+    bool mHasPlayed = false;
+    Node* mWheelNode = nullptr;
+    Node* mButtonNode = nullptr;
+    Sprite* mWheelInner = nullptr;
+    Sprite* mWheelBorder = nullptr;
+    Sprite* mArrow = nullptr;
+    ui::Button* mPlayButton = nullptr;
 
-    std::vector<Sprite*> mRewardIcons;
-    Vec2 mScreenMiddle;
-    bool mHasPlayed;
-    Node* mWheelNode;
-    Node* mButtonNode;
-    Sprite* mWheelInner;
-    Sprite* mWheelBorder;
-    Sprite* mArrow;
-    ui::Button* mPlayButton;
-
-    ResetReward mRR; //For reset purposes
+    ResetReward mRR{}; //For reset purposes
 };
 
 #endif //PROJ_ANDROID_BONUSWHEELSCENE_H

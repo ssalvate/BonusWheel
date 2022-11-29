@@ -195,8 +195,10 @@ void BonusWheel::ShowReward(int sector) {
     mArrow->setVisible(false);
 
     auto s = Spawn::create(ScaleUp, easeMoveTo, nullptr);
-    // Save position to rest
-    mRR = { rewardIcon->getPosition() , rewardIcon };
+    // Save position to reset
+    mRR.pos = rewardIcon->getPosition();
+    mRR.sp = rewardIcon;
+
     rewardIcon->runAction(s);
 }
 
