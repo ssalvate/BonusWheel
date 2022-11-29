@@ -1,7 +1,7 @@
 
 
-#ifndef  PROJ_ANDROID_BONUSWHEELSCENE_H
-#define  PROJ_ANDROID_BONUSWHEELSCENE_H
+#ifndef  BONUSWHEEL_CLASSES_BONUSWHEELSCENE_H_
+#define  BONUSWHEEL_CLASSES_BONUSWHEELSCENE_H_
 
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
@@ -70,4 +70,4 @@ private:
     ResetReward mRR{}; //For reset purposes
 };
 
-#endif //PROJ_ANDROID_BONUSWHEELSCENE_H
+#endif // BONUSWHEEL_CLASSES_BONUSWHEELSCENE_H_

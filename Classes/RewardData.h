@@ -1,6 +1,6 @@
 
-#ifndef  PROJ_ANDROID_REWARDDATA_H
-#define  PROJ_ANDROID_REWARDDATA_H
+#ifndef  BONUSWHEEL_CLASSES_REWARDDATA_H_
+#define  BONUSWHEEL_CLASSES_REWARDDATA_H_
 
 #include "cocos2d.h"
 #include <random>
@@ -68,7 +68,6 @@ int GetReward() {
     }
     auto index = getRandomNumber() % tmp.size();
     return tmp[index];
-
 }
 
 // Log how many times each sector is selected based
@@ -89,4 +88,4 @@ void DistributionCheck(int amount)
     }
 }
 
-#endif //PROJ_ANDROID_REWARDDATA_H
+#endif // BONUSWHEEL_CLASSES_REWARDDATA_H_
