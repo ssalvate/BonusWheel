@@ -128,10 +128,8 @@ void BonusWheel::SetRewardLabel(Sprite* sp, const RewardElement& reward)
 void BonusWheel::OnPlayButton()
 {
     log("On button click");
-
     if (!mHasPlayed) {
         mHasPlayed = true;
-
         //DistributionCheck(1000);
 
         int sector = GetReward();
